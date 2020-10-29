@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin:0px auto;
+}
+
+body {
+  	background-color: #DCDCDC;
+  	font-family: "EB Garamond", century, sans-serif;
+  	font-size: 20px;
+  	margin: 0;
+  	padding: 0;
+  	position: absolute;
+}
+
+header {
+	background-image: url('https://cdn.pixabay.com/photo/2012/02/25/19/05/volcano-16912_960_720.jpg');
+	background-size: cover;
+	background-position: center;
+	font-family: 'Acme', sans-serif;
+	color: white;
+}
+
+#main-head, .wisata {
+	padding: 100px;
+}
+#main-head {
+	text-align: center;
+}
+
+input {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 10px;
+    color: #ffffff;
+    border-radius: 10px;
+}
+
+nav {
+   padding: 5px;
+   width: 100%;
+   background-color: #111010;
+   position: fixed;
+   top: 0;
+   z-index:1001;
+}
+nav li {
+   display: inline;
+   list-style-type: none;
+   margin-right: 20px;
+}
+nav a {
+   font-size: 18px;
+   color: white;
+   text-decoration: none;
+}
+nav a:hover {
+    font-weight: bold;
+}
+#title {
+	padding-bottom: 5%;
+}
+#title img {
+	max-width: 15%;
+	position: center;
+}
+
+#box {
+	box-shadow: 0 4px 8px 0 #2F4F4F;
+    border-radius: 3px;
+    margin: -4% 2%;
+    position: relative;
+}
+#box p {
+	font-size: 15px;
+}
+#slider {
+	display: flex;
+  	flex-wrap: wrap;
+  	padding: 5% 10%;
+  	background-color: #F5F5DC;
+  	color: #696969;
+}
+#slider p {
+	text-align: center;
+	padding: 0 20% 5% 20%;
+	font-size: 20px;
+}
+
+.card {
+   position: relative;
+   width: 25%;
+   font-size: 15px;
+   text-align: center;
+}
+.card img {
+	width: 50%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 40px;
+	font-family: 'Acme', sans-serif;
+}
+#pantai {
+	background-image: url('./img/bg-pantai.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+	color: #ffffff;
+	text-shadow: 3px 2px 5px black;
+	opacity: 90%;
+}
+#coban {
+	background-image: url('./img/bg-coban.png');
+	background-size: cover;
+	background-position: center;
+	background-attachment:fixed;
+	color: #ffffff;
+	text-shadow: 3px 2px 5px black;
+	opacity: 90%;
+}
+#coban img, #pantai img {
+	float: right;
+  	max-width: 20%;
+  	border: 1px solid rgb(234, 241, 239);
+  	border-radius: 48%
+}
+#gunung {
+	text-align: right;
+	background-color: #F9F3E1;
+	color: #696969;
+}
+#gunung img {
+	float: left;
+  	max-width: 20%;
+  	border: 1px solid rgb(234, 241, 239);
+  	border-radius: 48%
+}
+#moreinfo {
+	background-color: #F5F5DC;
+	color: #696969;
+  	padding: 5% 10%;
+}
+#column {
+	display: flex;
+  	flex-wrap: wrap;
+}
+#cp {
+	width:30%;
+	font-size: 20px;
+}
+#cp div {
+	padding-top: 15%;
+}
+
+#cp img {
+	width: 20%;
+	display: block;
+	float: left;
+}
+#cp a {
+	color: #4F4392;
+    text-decoration: none;
+}
+
+#cp a:hover {
+    font-weight: bold;
+}
+
+#contact-us {
+   margin: auto;
+   background-color:  #F9F3E1;
+   color: #696969;
+   padding: 10px 20px 30px 20px;
+   box-shadow: 0 4px 8px 0 #2F4F4F;
+   border-radius: 3px;
+   margin: 4%;
+   position: relative;
+   width: 50%;
+}
+.input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid #696969;
+  padding: 10px;
+  color: #696969;
+  width: 100%;
+}
+textarea {
+  height: 55%;
+}
+.btn {
+  background: #696969;
+  margin-top: 5%;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#footer {
+	color: white;
+	background-color: #94918F;
+	padding: 2% 5%;
+}
+footer {
+	background-color: #111010;
+	padding-top: 5%;
+}
+
+@media screen and (max-width: 540px) {
+	#coban img, #pantai img, #gunung img {
+		max-width: 100%;
+	  	border: 1px solid rgb(234, 241, 239);
+	  	border-radius: 48%;
+	  	display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+	#gunung, #pantai, #coban {
+	  	text-align: center;
+	}
+
+	#cp img {
+	width: 30%;
+	display: block;
+	float: left;
+	}
+
+}
+
+@media screen and (max-width: 850px) {
+	#coban img, #pantai img {
+		float: right;
+	  	max-width: 30%;
+	  	border: 1px solid rgb(234, 241, 239);
+	  	border-radius: 48%;
+	}
+	#gunung {
+		text-align: right;
+		background-color: #F9F3E1;
+		color: #696969;
+	}
+	#gunung img {
+		float: left;
+	  	max-width: 30%;
+	  	border: 1px solid rgb(234, 241, 239);
+	  	border-radius: 48%
+	}
+
+}
