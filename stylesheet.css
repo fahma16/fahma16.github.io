@@ -156,15 +156,15 @@ h2 {
   	flex-wrap: wrap;
 }
 #cp {
-	width:30%;
-	font-size: 20px;
+	width:50%;
+	font-size: 40px;
 }
 #cp div {
-	padding-top: 15%;
+	padding-top: 45%;
 }
 
 #cp img {
-	width: 20%;
+	width: 30%;
 	display: block;
 	float: left;
 }
